@@ -1,0 +1,21 @@
+<section class="about">
+    <div class="about__image">
+        <img [src]="photoUrl || avatarUrl" [alt]="user.name + ' profile photo'" />
+    </div>
+    <div class="about__content">
+        <h3 class="eyebrow"><u>About Me</u></h3>
+        
+
+        <p class="blurb">
+            I’m a software engineer who enjoys building performant, user-focused products.
+            I work across the stack and love shipping clean, maintainable code.
+        </p>
+
+        <div class="tech">
+            <h3>Tech I use</h3>
+            <ul class="tech__list">
+                <li class="chip" *ngFor="let t of techStack">{{ t }}</li>
+            </ul>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,24 @@
+<section class="hero">
+    <div class="hero__content">
+        <p class="hero__eyebrow">Hi, I'm</p>
+        <h1 class="hero__title">{{ user.name }}</h1>
+        <p class="hero__subtitle">{{ user.profession | titlecase }}</p>
+
+        <div class="hero__cta">
+            <a routerLink="/" fragment="projects" class="btn btn--primary">View Projects</a>
+            <a routerLink="/" fragment="contact" class="btn btn--ghost">Get In Touch</a>
+        </div>
+
+        <div class="hero__links" *ngIf="user.linkedin || user.github">
+            <a *ngIf="user.linkedin" [href]="user.linkedin" target="_blank" rel="noopener">LinkedIn</a>
+            <span *ngIf="user.linkedin && user.github" class="dot">•</span>
+            <a *ngIf="user.github" [href]="user.github" target="_blank" rel="noopener">GitHub</a>
+        </div>
+    </div>
+    <div class="hero__media">
+        <div class="hero__avatar">
+            <img [src]="user.photoUrl || 'https://ui-avatars.com/api/?name=' + user.name + '&background=1f2937&color=fff&size=256'" alt="avatar">
+        </div>
+        <div class="hero__glow" aria-hidden="true"></div>
+    </div>
+</section>

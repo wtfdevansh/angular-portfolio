@@ -1,0 +1,17 @@
+<nav>
+    <ul>
+        <li><a routerLink="/" fragment="intro">MySelf</a></li>
+        <li><a routerLink="/" fragment="about">About</a></li>
+        <!-- <li><a routerLink="/" fragment="tech">Tech Stack</a></li> -->
+        <li><a routerLink="/" fragment="experience">Experience</a></li>
+        <li><a routerLink="/" fragment="projects">Projects</a></li>
+        <li><a routerLink="/" fragment="contact">Contact</a></li>
+    </ul>
+</nav>
+
+<app-intro class="section" id="intro" [user]="user"></app-intro>
+<app-about class="section" id="about" [techStack]="techStack" [user]="user"></app-about>
+<!-- <app-tech class="section" id="tech" [techStack]="techStack"></app-tech> -->
+<app-experience class="section" id="experience" [experience]="experience"></app-experience>
+<app-projects class="section" id="projects" [projects]="projects"></app-projects>
+<app-contact class="section" id="contact"></app-contact>

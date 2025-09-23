@@ -1,0 +1,13 @@
+<section class="experience">
+    <h2 class="experience__title">Experience</h2>
+    <div class="experience__list">
+        <div class="experience-card" *ngFor="let xp of experience; let i = index">
+            <div class="">
+                <h3 class="xp-card__company">{{ xp.companyName }}</h3>
+                <span class="xp-card__dates">{{ xp.startDate }} — {{ xp.endDate }}</span>
+            </div>
+            <p class="xp-card__desc">{{ xp.jobDescription }}</p>
+        </div>
+    </div>
+</section>
+

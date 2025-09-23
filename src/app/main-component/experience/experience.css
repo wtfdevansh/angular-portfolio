@@ -1,0 +1,31 @@
+.experience{ 
+    
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center; 
+     /* margin-top: 50px; */
+     padding: 20px;
+    
+}
+.experience__title{ margin: 0 0 16px; font-size: 28px; }
+
+.experience__list{
+    display: flex;
+    flex-direction: column;
+}
+@media (min-width: 900px){
+    .experience__list{ grid-template-columns: 1fr 1fr; }
+}
+
+.experience-card{
+
+    display: block;
+    border: 1px solid rgb(220, 215, 215);
+    border-radius: 20px;
+    padding: 20px;
+    margin: 10px;
+    font-size: 1rem;
+    
+}
+
