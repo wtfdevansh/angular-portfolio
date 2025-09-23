@@ -8,13 +8,14 @@ nav{
     z-index: 1000;
     box-shadow: 0 2px 8px rgba(0,0,0,.4);
     border-bottom: 1px solid rgba(255,255,255,.08);
+    /* overflow: hidden; */
 }
 
 nav ul{
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 5vw;
 }
 
 nav a{
@@ -25,7 +26,17 @@ nav a{
     border-radius: 8px;
     transition: background .15s ease, color .15s ease;
 }
-nav a:hover{ background: rgba(255,255,255,.08); color: #fff; }
+nav a:hover{ 
+    background: rgba(255,255,255,.08);
+     color: #fff; 
+}
+
+@media (max-width: 768px) {
+    nav ul{
+        gap: 0;
+        font-size: small;
+    }
+}  
 
 .section{
     min-height: 80vh;
@@ -37,5 +48,5 @@ nav a:hover{ background: rgba(255,255,255,.08); color: #fff; }
 
 #intro{
     background: lightblue;
-    padding-top: 140px; /* offset fixed nav for first section */
+
 }
