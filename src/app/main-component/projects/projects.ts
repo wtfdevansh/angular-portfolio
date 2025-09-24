@@ -12,4 +12,20 @@ export class Projects {
 
   @Input() projects : any[] = []
 
+  isHovered: boolean = false;
+  currentProject: string = ""
+
+  onMouseEnter(projectName : string){
+    this.isHovered = true
+    this.currentProject = projectName
+  }
+
+  onMouseLeave(){
+    this.isHovered = false
+    this.currentProject = ""
+  }
+
+
+  
+
 }

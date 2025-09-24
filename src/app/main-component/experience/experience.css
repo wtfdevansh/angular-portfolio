@@ -8,14 +8,19 @@
      padding: 20px;
     
 }
-.experience__title{ margin: 0 0 16px; font-size: 28px; }
+.experience__title{ 
+    margin: 0 0 16px; 
+    font-size: 28px; 
+}
 
 .experience__list{
     display: flex;
     flex-direction: column;
 }
 @media (min-width: 900px){
-    .experience__list{ grid-template-columns: 1fr 1fr; }
+    .experience__list{ 
+        grid-template-columns: 1fr 1fr; 
+    }
 }
 
 .experience-card{
@@ -28,4 +33,11 @@
     font-size: 1rem;
     
 }
+
+.glow{
+    background-color: bisque;
+    color: black;
+}
+
+
 

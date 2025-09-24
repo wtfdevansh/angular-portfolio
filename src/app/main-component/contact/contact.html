@@ -3,27 +3,31 @@
         <h1>contact</h1>
     </div>
 
-    <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
-        <div>
-        <div>
+    <form [formGroup]="myForm" (ngSubmit)="onSubmit()" [ngClass]="wrongCredential?{wrong:{}}:{right:{}}" >
+
+        <div *ngIf="isVisible()">
+            <h3>enter valid details!!</h3>
+        </div>
+        <div class="nameInput">
+        <div class="form-group">
             <label for="first-name">First name: </label>
             <input type="text" id="first-name" placeholder="first name" formControlName="firstName">
         </div>
-        <div>
+        <div class="form-group">
             <label for="last-name">Last name: </label>
             <input type="text" id="last-name" placeholder="last name" formControlName="lastName">
         </div>
         </div>
-        <div>
-            <label for="email">Email: </label>
+        <div class="form-group">
+            <label for="email">Email:  </label>
             <input type="email" id="email" placeholder="email address" formControlName="email">
         </div>
-        <div>
+        <div class="form-group">
             <label for="phone">Phone: </label>
             <input type="tel" id="phone" placeholder="Mobile no" formControlName="mobile">
         </div>
 
-        <button type="submit">Submit</button>
+        <button type="submit" (mouseenter)="onMouseEnter()" (mouseleave)="onMouseLeave()" [ngStyle]="{backgroundColor: (isHovered)? 'lightblue':'antiquewhite'}">Submit</button>
     </form>
 
 </section>

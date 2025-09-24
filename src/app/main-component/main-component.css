@@ -8,14 +8,26 @@ nav{
     z-index: 1000;
     box-shadow: 0 2px 8px rgba(0,0,0,.4);
     border-bottom: 1px solid rgba(255,255,255,.08);
-    /* overflow: hidden; */
+    overflow: hidden;
+
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding:0;
+    
+
+
 }
 
 nav ul{
-    list-style: none;
+    /* list-style: none;
     display: flex;
     justify-content: center;
-    gap: 5vw;
+    gap: 5vw; */
+
+    display: flex;
+  list-style: none;
+  gap: 1rem;
 }
 
 nav a{
@@ -34,9 +46,18 @@ nav a:hover{
 @media (max-width: 768px) {
     nav ul{
         gap: 0;
-        font-size: small;
+        font-size: x-small;
     }
-}  
+}   
+
+@media (max-width: 320px) {
+    nav ul{
+        gap: 0;
+        font-size: xx-small;
+    }
+}   
+
+
 
 .section{
     min-height: 80vh;
@@ -50,3 +71,12 @@ nav a:hover{
     background: lightblue;
 
 }
+
+/* @media (max-width: 768px) {
+    nav ul {
+      display: none;       
+      flex-direction: column;
+      gap: 0;
+      width: 100%;
+    }
+} */

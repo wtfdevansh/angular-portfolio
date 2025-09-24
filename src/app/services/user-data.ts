@@ -10,8 +10,8 @@ export class UserData {
           email: "mrdivu7@gmail.com",
           phone: "8384820192",
           linkedin: "https://www.linkedin.com/in/devansh-goyal-3b558121b",
-          github: "https://leetcode.com/u/devansh7/",
-          leetcode: "https://github.com/wtfdevansh",
+          github: "https://github.com/wtfdevansh",
+          leetcode: "https://leetcode.com/u/devansh7/",
           photoUrl: "assets/hero-image.png"
   }
 

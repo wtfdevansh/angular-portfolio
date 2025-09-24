@@ -13,7 +13,8 @@
         <div class="tech">
             <h3>Tech I use</h3>
             <ul class="tech__list">
-                <li class="chip" *ngFor="let t of techStack">{{ t }}</li>
+                <li class="chip" *ngFor="let t of techStack" (mouseenter)="onMouseEnter(t)" 
+                (mouseleave)="onMouseLeave()"  [ngStyle]="{ backgroundColor: (isHover && t== techName ) ? 'lightblue' : 'white' }">{{ t }}</li>
             </ul>
         </div>
     </div>
