@@ -46,16 +46,10 @@ nav a:hover{
 @media (max-width: 768px) {
     nav ul{
         gap: 0;
-        font-size: x-small;
+        font-size: small;
     }
 }   
 
-@media (max-width: 320px) {
-    nav ul{
-        gap: 0;
-        font-size: xx-small;
-    }
-}   
 
 
 
