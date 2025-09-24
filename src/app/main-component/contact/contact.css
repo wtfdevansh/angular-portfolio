@@ -2,11 +2,20 @@ form{
     display: flex;
     flex-direction: column;
     gap: 10px;
-    border: 1px solid black;
+    border: 1px solid rgb(194, 164, 164);
     padding: 20px;
     border-radius: 20px;
     font-size: 1.2rem;
 
+    
+
+}
+
+form input{
+    border-radius: 20px;
+    padding: 10px;
+    border-style: none;
+    margin: 10px;
 }
 
 .contact{
@@ -14,4 +23,14 @@ form{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 10px;
+
 }
+
+button{
+    border-radius: 15px;
+    background-color: antiquewhite;
+    border-style: none;
+    padding: 20px;
+}
+

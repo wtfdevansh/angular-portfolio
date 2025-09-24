@@ -16,7 +16,7 @@ import { UserData } from '../services/user-data';
 })
 export class MainComponent {
 
-  user = {name:"", profession:"", email:"", linkedin:"", github:""}
+  user = {name:"", profession:"", email:"", phone: "",  linkedin:"", github:"" , leetcode:""}
   techStack : string[] = []
   experience = [
     {companyName: "" , jobDescription: "" , startDate: "" , endDate: ""},

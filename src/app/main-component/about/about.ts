@@ -11,7 +11,8 @@ export class About {
 
   @Input() techStack : string[] = []
   @Input() user : { name: string, profession: string } = { name: '', profession: '' }
-  @Input() photoUrl : string = ''
+  
+  photoUrl = "assets/neon_tech.png"
 
   get avatarUrl(): string {
     const name = encodeURIComponent(this.user?.name || 'User')

@@ -11,8 +11,12 @@
 
         <div class="hero__links" *ngIf="user.linkedin || user.github">
             <a *ngIf="user.linkedin" [href]="user.linkedin" target="_blank" rel="noopener">LinkedIn</a>
-            <span *ngIf="user.linkedin && user.github" class="dot">•</span>
+            <span class="dot">•</span>
             <a *ngIf="user.github" [href]="user.github" target="_blank" rel="noopener">GitHub</a>
+            <span  class="dot">•</span>
+            <a *ngIf="user.github" [href]="user.email" target="_blank" rel="noopener">Email</a>
+            <span class="dot">•</span>
+            <a *ngIf="user.github" [href]="user.leetcode" target="_blank" rel="noopener">Leetcode</a>
         </div>
     </div>
     <div class="hero__media">

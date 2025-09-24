@@ -12,7 +12,7 @@ import { UserData } from '../../services/user-data';
 export class Intro {
 
 
-  @Input() user: { name: string; profession: string; email: string; linkedin: string; github: string; photoUrl?: string } = {name:"", profession:"", email:"", linkedin:"", github:""}
+  @Input() user: { name: string; profession: string; email: string; phone: string ;linkedin: string; github: string; leetcode: string; photoUrl?: string } = {name:"", profession:"", email:"",phone: "",  linkedin:"", github:"" , leetcode: "" , photoUrl: ""}
 
   constructor(private userData : UserData){
 
